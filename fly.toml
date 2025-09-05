@@ -1,19 +1,12 @@
 app = "vixter-centrifugo"
 primary_region = "atl"
 
-app = "vixter-centrifugo"
-primary_region = "atl"
-
 [build]
   dockerfile = "Dockerfile"
-
-[processes]
-app = "/start.sh"
 
 [[services]]
 protocol = "tcp"
 internal_port = 8000
-processes = ["app"]
 
 [[services.ports]]
 port = 80
@@ -31,4 +24,3 @@ path = "/health"
 protocol = "http"
 grace_period = "10s"
 port = 80
-
