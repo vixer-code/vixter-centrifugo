@@ -1,0 +1,36 @@
+{
+  "token_hmac_secret_key": "7c8e1f9a2b3d4e5f6a7b8c9d0e1f2a3b",
+  "api_key": "9f3c2b1e-7a4d-4c8e-9d2a-8e6f4a1c3b7e",
+  "allowed_origins": [
+    "https://vixter-react.vercel.app",
+    "https://vixter-react-llyd.vercel.app",
+    "http://localhost:5173",
+    "http://localhost:3000"
+  ],
+  "admin": false,
+  "log_level": "info",
+  "health": true,
+  "api": {
+    "enabled": true,
+    "endpoints": [
+      "publish",
+      "broadcast",
+      "subscribe",
+      "unsubscribe",
+      "presence",
+      "presence_stats",
+      "history",
+      "channels",
+      "info"
+    ]
+  },
+  "websocket": {
+    "enabled": true
+  },
+  "sockjs": {
+    "enabled": true
+  },
+  "grpc_api": {
+    "enabled": false
+  }
+}

@@ -1,3 +1,5 @@
 FROM centrifugo/centrifugo:v6
 
-CMD ["centrifugo"]
+COPY config.json /config.json
+
+CMD ["centrifugo", "--config", "/config.json"]
