@@ -1,0 +1,12 @@
+{
+    "api_key": "${CENTRIFUGO_API_KEY}",
+    "token_hmac_secret_key": "${CENTRIFUGO_TOKEN_HMAC_SECRET_KEY}",
+    "allowed_origins": [
+      "https://vixter-react.vercel.app",
+      "https://vixter-react-llyd.vercel.app"
+    ],
+    "health": true,
+    "admin": false,
+    "log_level": "info"
+  }
+  

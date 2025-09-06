@@ -1,0 +1,26 @@
+app = "vixter-centrifugo"
+primary_region = "atl"
+
+[build]
+  image = "vixter-centrifugo"
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 8000
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+  [[services.http_checks]]
+  interval = "15s"
+  timeout = "2s"
+  method = "GET"
+  path = "/health"
+  protocol = "http"
+  port = 80
+  grace_period = "10s"
