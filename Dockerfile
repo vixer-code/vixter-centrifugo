@@ -1,15 +1,10 @@
 FROM centrifugo/centrifugo:v6
 
-# Instala envsubst
-RUN apk add --no-cache gettext
+# Copia o config.json já com os valores (não precisa de start.sh)
+COPY config.json /config.json
 
-# Copia template e script
-COPY config.json.template /config.json.template
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+# Roda o Centrifugo diretamente em foreground
+CMD ["centrifugo", "--config", "/config.json", "--log_level", "info"]
 
-# Define o entrypoint
-ENTRYPOINT ["/start.sh"]
-
-# Porta padrão do Centrifugo
+# Porta padrão
 EXPOSE 8000
