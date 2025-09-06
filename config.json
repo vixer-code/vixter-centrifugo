@@ -7,9 +7,7 @@
     "http://localhost:5173",
     "http://localhost:3000"
   ],
-  "admin": false,
   "log_level": "info",
-  "health": true,
   "api": {
     "enabled": true,
     "endpoints": [
