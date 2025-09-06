@@ -7,28 +7,5 @@
     "http://localhost:5173",
     "http://localhost:3000"
   ],
-  "log_level": "info",
-  "api": {
-    "enabled": true,
-    "endpoints": [
-      "publish",
-      "broadcast",
-      "subscribe",
-      "unsubscribe",
-      "presence",
-      "presence_stats",
-      "history",
-      "channels",
-      "info"
-    ]
-  },
-  "websocket": {
-    "enabled": true
-  },
-  "sockjs": {
-    "enabled": true
-  },
-  "grpc_api": {
-    "enabled": false
-  }
+  "log_level": "info"
 }
