@@ -12,8 +12,9 @@
     {
       "name": "conversation",
       "allow_subscribe_for_client": true,
-      "allow_publish_for_client": true,
+      "allow_publish_for_client": false,
       "allow_publish_for_subscriber": true,
+      "subscribe_to_publish": true,
       "presence": true,
       "join_leave": true,
       "history_size": 10,
