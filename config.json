@@ -7,14 +7,13 @@
     "http://localhost:5173",
     "http://localhost:3000"
   ],
-  "log_level": "info",
+  "log_level": "debug",
   "namespaces": [
     {
       "name": "conversation",
       "allow_subscribe_for_client": true,
-      "allow_publish_for_client": false,
+      "allow_publish_for_client": true,
       "allow_publish_for_subscriber": true,
-      "subscribe_to_publish": true,
       "presence": true,
       "join_leave": true,
       "history_size": 10,
