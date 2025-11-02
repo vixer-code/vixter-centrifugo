@@ -5,7 +5,9 @@
     "https://vixter-react.vercel.app",
     "https://vixter-react-llyd.vercel.app",
     "http://localhost:5173",
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://vixter.com.br",
+    "https://www.vixter.com.br"
   ],
   "log_level": "debug",
   "namespaces": [
