@@ -25,6 +25,11 @@
       "allow_publish_for_subscriber": true,
       "presence": true,
       "join_leave": true
+    },
+    {
+      "name": "chat",
+      "allow_subscribe_for_client": true,
+      "allow_publish_for_client": false
     }
   ]
 }
