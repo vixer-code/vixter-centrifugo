@@ -4,7 +4,9 @@
   "allowed_origins": [
     "https://vixter.com.br",
     "https://www.vixter.com.br",
-    "https://api.vixter.com.br"
+    "https://api.vixter.com.br",
+    "https://dev.vixter.com.br",
+    "https://api-dev.vixter.com.br"
   ],
   "log_level": "debug",
   "namespaces": [
